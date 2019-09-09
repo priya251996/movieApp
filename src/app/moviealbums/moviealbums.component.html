@@ -1,0 +1,30 @@
+<div class="container">
+  <form>
+    <div class="row">
+    <div class="col-25">
+      <label>Movie Name</label>
+    </div>
+    <div class="col-75">
+      <input [(ngModel)]="MovieName" class='form-control' name="MovieName" placeholder='MovieName' type='text'>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label>Language</label>
+      </div>
+    <div class="col-75">
+      <input [(ngModel)]="Language" class='form-control' name="Language" placeholder='Language' type='text'>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label>Genre</label>
+      </div>
+      <div class="col-25">
+      <input [(ngModel)]="Genre" class='form-control' name="Genre" placeholder='Genre' type='text'>
+    </div>
+    </div><br>
+    <button class="btn btn-primary" (click)="save()" style="margin-left: 30px">Save</button>
+    <button class="btn btn-primary" (click)="cancel()" type="reset" style="margin-left: 50px">Cancel</button>
+  </form>
+</div>

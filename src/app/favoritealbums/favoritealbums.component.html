@@ -1,0 +1,22 @@
+<div class="form-inline">
+  <input id="myInput" type="search" [(ngModel)]="search" placeholder="Search" name="search">
+  <button class="btn btn-primary" (click)="addMovie()">Add Movie</button>
+</div>
+<div class="table-responsive">
+  <table class="table" id="myTable">
+    <thead>
+      <tr id="myTable">
+        <th id="myTable">MovieName</th>
+        <th id="myTable">Language</th>
+        <th id="myTable">Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="myTable" *ngFor='let table of tabledata | filter:search;let i=index'>
+        <td id="myTable">{{table.MovieName}}</td>
+        <td id="myTable">{{table.Language}}</td>
+        <td id="myTable">{{table.Genre}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

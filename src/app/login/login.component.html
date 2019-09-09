@@ -1,0 +1,22 @@
+<div class="container">
+  <form>
+    <div class="row">
+    <div class="col-25">
+      <label>Name</label>
+    </div>
+    <div class="col-75">
+      <input id="name" [(ngModel)]="name" class='form-control' name="name" placeholder='name' type='text'>
+    </div>
+    </div>
+     <div class="row">
+    <div class="col-25">
+      <label>Password</label>
+      </div>
+    <div class="col-75">
+      <input id="password" [(ngModel)]="pass" class='form-control' name="password" placeholder='Password'
+        type='password'>
+    </div>
+    </div>
+    <button class="btn btn-primary" (click)="login()">Sign in</button>
+  </form>
+</div>
